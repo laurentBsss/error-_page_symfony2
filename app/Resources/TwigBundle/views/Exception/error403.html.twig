@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="{{ _charset }}" />
+        <title>erreur de  type: {{ status_text }} : {{ status_code }}</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    </head>
+    <body>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-12 jumbotron">
+                {# pages non trouvées #}
+                <h2>Désolé cette  page est  inaccessible pour le  moment  <br> à bientot </h2>
+                <h2> 
+                Sorry this page  is not avaible <br> see u  soon.
+                </h2>
+                {# btn retour home #}
+                <div>
+                    <a href="{{ path('home') }}" class="btn btn-warning">Retour à l'acceuil/Homepage</a>
+                </div>
+                </div>
+
+            </div>
+
+        </section>
+    </body>
+</html>
